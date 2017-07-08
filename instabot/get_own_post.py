@@ -1,6 +1,7 @@
 import requests
 from constants import app_access_token,base_url
-import urllib.urlretrieve
+import urllib
+
 
 def get_own_post():
     #https: // api.instagram.com / v1 / users / self / media / recent /?access_token = 4631267286.cOOe824.bOabe1e188f8488fbe0966f5d7d25b88
