@@ -1,7 +1,8 @@
 import requests
 from get_user_id import get_user_id
 from constants import app_access_token,base_url
-import urllib.urlretrieve
+import urllib
+
 
 def get_users_post(insta_username):
     #function logic
