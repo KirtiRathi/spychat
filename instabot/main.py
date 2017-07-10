@@ -12,6 +12,8 @@ from like_a_post import like_a_post
 from post_a_comment import post_a_comment
 #for delete the negative comment
 from delete_negative_comment import delete_negative_comment
+#for the sake of marketing your product
+from marketing import target_a_comment
 
 
 def start_bot():
@@ -28,7 +30,8 @@ def start_bot():
         print "g.Get a list of comments on the recent post of a user\n"
         print "h.Make a comment on the recent post of a user\n"
         print "i.Delete negative comments from the recent post of a user\n"
-        print "j.Exit"
+        print "j.targeted commented on posts for the sake of marketing your prouct or service"
+        print "k.Exit"
 
         choice = raw_input("Enter you choice: ")
 
@@ -42,9 +45,6 @@ def start_bot():
         elif choice == "d":
             insta_username = raw_input("Enter the username of the user: ")
             get_users_post(insta_username)
-        #elif choice=="e":
-         #  insta_username = raw_input("Enter the username of the user: ")
-          # get_like_list(insta_username)
         elif choice=="f":
            insta_username = raw_input("Enter the username of the user: ")
            like_a_post(insta_username)
@@ -58,6 +58,8 @@ def start_bot():
            insta_username = raw_input("Enter the username of the user: ")
            delete_negative_comment(insta_username)
         elif choice == "j":
+            target_a_comment(insta_username)
+        elif choice=="k":
             exit()
         else:
             print "wrong choice"
