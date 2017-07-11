@@ -14,6 +14,8 @@ from post_a_comment import post_a_comment
 from delete_negative_comment import delete_negative_comment
 #for the sake of marketing your product
 from marketing import target_a_comment
+#to get the list of comments
+from list_of_comment import list_of_comment
 
 
 def start_bot():
@@ -25,13 +27,12 @@ def start_bot():
         print "b.Get details of a user by username\n"
         print "c.Get your own recent post\n"
         print "d.Get the recent post of a user by username\n"
-        print "e.Get a list of people who have liked the recent post of a user\n"
-        print "f.Like the recent post of a user\n"
-        print "g.Get a list of comments on the recent post of a user\n"
-        print "h.Make a comment on the recent post of a user\n"
-        print "i.Delete negative comments from the recent post of a user\n"
-        print "j.targeted commented on posts for the sake of marketing your prouct or service"
-        print "k.Exit"
+        print "e.Like the recent post of a user\n"
+        print "f.Get a list of comments on the recent post of a user\n"
+        print "g.Make a comment on the recent post of a user\n"
+        print "h.Delete negative comments from the recent post of a user\n"
+        print "i.targeted commented on posts for the sake of marketing your prouct or service\n"
+        print "j.Exit"
 
         choice = raw_input("Enter you choice: ")
 
@@ -45,21 +46,22 @@ def start_bot():
         elif choice == "d":
             insta_username = raw_input("Enter the username of the user: ")
             get_users_post(insta_username)
-        elif choice=="f":
+        elif choice=="e":
            insta_username = raw_input("Enter the username of the user: ")
            like_a_post(insta_username)
-        #elif choice=="g":
-         #  insta_username = raw_input("Enter the username of the user: ")
-          # get_comment_list(insta_username)
-        elif choice=="h":
+        elif choice=="f":
+           insta_username = raw_input("Enter the username of the user: ")
+           list_of_comment(insta_username)
+        elif choice=="g":
            insta_username = raw_input("Enter the username of the user: ")
            post_a_comment(insta_username)
-        elif choice=="i":
+        elif choice=="h":
            insta_username = raw_input("Enter the username of the user: ")
            delete_negative_comment(insta_username)
-        elif choice == "j":
+        elif choice == "i":
+            insta_username = raw_input("Enter the username of the user: ")
             target_a_comment(insta_username)
-        elif choice=="k":
+        elif choice=="j":
             exit()
         else:
             print "wrong choice"
