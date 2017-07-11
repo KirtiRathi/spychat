@@ -16,8 +16,10 @@ from delete_negative_comment import delete_negative_comment
 from marketing import target_a_comment
 #to get the list of comments
 from list_of_comment import list_of_comment
+#insta_username="jyotithakur15111
 
 
+# insta_username = raw_input("Enter the username of the user: ")
 def start_bot():
     while True:
         print '\n'
