@@ -1,5 +1,9 @@
 import  requests
-from constants import app_access_token,base_url,TextBlob,NaiveBayesAnalyzer
+from constants import app_access_token,base_url
+from textblob import TextBlob
+from textblob.sentiments import  NaiveBayesAnalyzer
+
+
 from get_post_id import get_post_id
 
 
